@@ -66,7 +66,7 @@ Chỉ dùng ảnh `sample_id = kitchen`. Chọn **một** record.
 2. So với box, polygon cho thêm thông tin gì về hình dạng vật thể? Polygon cho biết: biên thực của vật thể, phần lồi lõm, khoảng thụt vào, hình dáng chân tay của người, phần bị khuyết trong đường viền.
 3. `instance_id` dùng để làm gì? Nó **không** phải class ID và **không** phải tracking ID — bạn hiểu câu này thế nào? `instance_id` dùng để: định danh duy nhất từng đối tượng được annotate trong chính ảnh đó.
 4. Viết **một quy tắc vẽ biên mask** để người gán nhãn làm theo. Vẽ polygon bám sát ranh giới phần nhìn thấy được của vật thể; bao gồm mọi pixel thuộc vật thể và không lấn sang nền hoặc vật thể khác.
-5. Trên ảnh `kitchen`, chỉ ra **một** chỗ biên mờ / hai vật chạm nhau / bị che. Bạn dùng guideline hay escalation? Vì sao? Dùng guideline. Vì đây là tình huống rất phổ biến trong segmentation, Có thể chuẩn hóa thành quy tắc chung. Mọi annotator đều có thể áp dụng nhất quán.
+5. Trên ảnh `kitchen`, chỉ ra **một** chỗ biên mờ / hai vật chạm nhau / bị che. Bạn dùng guideline hay escalation? Vì sao? Lò vi sóng bị che đi 1 phần bởi nhiều vật thể khác nhau. Trong trường hợp này dùng guideline. Vì đây là tình huống rất phổ biến trong segmentation, có thể chuẩn hóa thành quy tắc chung, mọi annotator đều có thể áp dụng nhất quán.
 
 ## 4. Vòng đời và kiểm tra chất lượng
 
